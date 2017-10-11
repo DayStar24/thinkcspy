@@ -2,7 +2,7 @@ Exercises
 ---------
 .. container:: full_width
 
-1.
+  #.
 
     .. tabbed:: q1
 
@@ -26,7 +26,7 @@ Exercises
 
             The farmer returns the chicken, picks up the bag of corn to take it across and leave with the fox, and then returns for the chicken.
 
-2.
+  #.
 
     .. tabbed:: q2
 
@@ -100,7 +100,7 @@ Exercises
             | 3     | Oranges            | Apples and Oranges  |
             +-------+--------------------+---------------------+
 
-3.
+  #.
 
     .. tabbed:: q3
 
@@ -126,7 +126,7 @@ Exercises
 
             This difference will be between 1 and 10, since only one box has 9g balls, and we took between 1 and 10 balls from that box. In fact, this difference tells us which box has the 9g balls. For example, if the difference is 5g, then we know that there were 5 9g balls in the group that we weighted, and thus those balls came from box #5. In general, the difference ``d`` indicates the number of the box containing the defective balls.
 
-4.
+  #.
 
     .. tabbed:: q4
 
@@ -166,9 +166,37 @@ Exercises
               if __name__ == "__main__":
                   main()
 
-These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function). These problems build in difficulty, and are examples in how solving smaller problems can lead you to incrementally build the solutions to larger problems.
+  #.
 
-5.
+    .. tabbed:: q4a
+
+        .. tab:: Question
+
+            Write a short program using ``try:`` and ``except:`` where the user is prompted to enter an integer (ex. 1, 55, -2).  When entered correctly, print the integer, letting the user know that "You entered" and then the number. If the user enters something other than an integer, creating a ValueError, write an exception so that a message "That is not an integer!" prints.  Test the code written by entering an integer, and test the code by entering a word, character, or decimal.
+
+            .. activecode:: exceptions_try
+
+              try:
+                  #write code here
+
+              except #type of error:
+                  #write code here
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_try_answer
+
+              try:
+                  num = int(input("Please enter an integer"))
+                  print ("You entered", num)
+
+              except ValueError:
+                  print("That is not an integer!")
+
+
+    These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function). These problems build in difficulty, and are examples in how solving smaller problems can lead you to incrementally build the solutions to larger problems.
+
+  #.
 
     .. tabbed:: q5
 
@@ -203,7 +231,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-6.
+  #.
 
     .. tabbed:: q6
 
@@ -250,7 +278,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-7.
+  #.
 
     .. tabbed:: q7
 
@@ -296,7 +324,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-8.
+  #.
 
     .. tabbed:: q8
 
@@ -344,7 +372,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-9.
+  #.
 
     .. tabbed:: q9
 
@@ -378,7 +406,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-10.
+  #.
 
     .. tabbed:: q10
 
@@ -421,7 +449,7 @@ These next several problems are variations on a theme. Each will have you return
               if __name__ == "__main__":
                   main()
 
-11.
+  #.
 
     .. tabbed:: q11
 
