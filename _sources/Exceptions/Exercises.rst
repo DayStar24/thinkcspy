@@ -193,6 +193,57 @@ Exercises
               except ValueError:
                   print("That is not an integer!")
 
+  #.
+
+    .. tabbed:: q4b
+
+        .. tab:: Question
+
+          In this exercise, we will be dividing two integers. In the main function, write code to prompt the user for input for two integers. Invoke the divide function, passing in the values of the two integers from the user, and print the results as "The result is: " the answer.
+
+          In mathematics, a divisor (number by which another is divided) of zero is not allowed. When executing a program in Python where an expression is evaluated having 0 is a divisor,  a runtime error will occur, known as a ZeroDivisionError, and crash the program.
+
+          Write code to handle the ZeroDivisionError as an exception.
+          If a user enters zero as a divisor, in this case, the second integer, then the program should print the message "This expression is undefined with zero as the divisor!" The result ought to return undefined, printing "The result is: undefined".  Test your code with two integers. Remember to test your code using 0 for the second integer.
+
+          .. activecode:: exceptions_zero_div
+
+            def divide(x, y):
+                try:
+                    # Your code here
+                except ZeroDivisionError:
+                    # Your code here
+                else:
+                    # Your code here
+
+            def main():
+                # Your code here, prompt user for integers
+
+            if __name__ == "__main__":
+                main()
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_zero_div_answer
+
+              def divide(x, y):
+                  try:
+                      result = x/y
+                  except ZeroDivisionError:
+                      print ("This expression is undefined with zero as the divisor!")
+                      result = "undefined"
+                      return result
+                  else:
+                      return result
+
+              def main():
+                  x = int(input("Please type an integer: "))
+                  y = int(input("Please type another integer: "))
+                  answer = divide(x, y)
+                  print("The result is:", answer)
+
+              if __name__ == "__main__":
+                  main()
 
     These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function). These problems build in difficulty, and are examples in how solving smaller problems can lead you to incrementally build the solutions to larger problems.
 
